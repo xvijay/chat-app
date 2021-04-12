@@ -73,7 +73,8 @@
 .chat-feed {
   height: 100%;
   width: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: rgb(240, 240, 240);
 }
 
@@ -87,6 +88,12 @@
   color: #7554a0;
   font-weight: 800;
   font-size: 24px;
+}
+
+.chat-logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .chat-subtitle {
@@ -166,6 +173,9 @@
   border-radius: 6px;
   border: 1px solid #3b2a50;
   background-color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
 }
 
 .message-input {
